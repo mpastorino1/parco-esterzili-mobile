@@ -1,0 +1,6 @@
+{
+  "NSLocationAlwaysAndWhenInUseUsageDescription": "Cambia la localizzazione in “Consenti sempre“ per avere indicazioni sui punti di interesse all'interno del Parco di Esterzili.",
+  "NSLocationAlwaysUsageDescription": "Cambia la localizzazione in “Consenti sempre“ per avere indicazioni sui punti di interesse all'interno del Parco di Esterzili.",
+  "NSLocationWhenInUseUsageDescription": "Attiva la localizzazione per avere indicazioni all'interno del Parco di Esterzili.",
+  "NSMotionUsageDescription": "Consenti l'utilizzo dei sensori di movimento per permettere un utilizzo più efficiente della localizzazione."
+}

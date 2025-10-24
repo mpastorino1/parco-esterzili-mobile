@@ -1,0 +1,53 @@
+{
+  "build": {
+    "dev": {
+      "distribution": "internal",
+      "developmentClient": true,
+      "credentialsSource": "local",
+      "env": {
+        "APP_VARIANT": "dev",
+        "APP_NAME": "Esterzili (Dev)"
+      },
+      "android": {
+        "buildType": "apk"
+      },
+      "cache": {
+        "key": "eas-dev"
+      },
+      "channel": "dev"
+    },
+    "staging": {
+      "distribution": "internal",
+      "credentialsSource": "local",
+      "env": {
+        "APP_VARIANT": "staging",
+        "APP_NAME": "Esterzili (Staging)"
+      },
+      "android": {
+        "buildType": "apk"
+      },
+      "cache": {
+        "key": "eas-staging"
+      },
+      "channel": "staging"
+    },
+    "prod": {
+      "distribution": "store",
+      "credentialsSource": "local",
+      "env": {
+        "APP_VARIANT": "prod",
+        "APP_NAME": "Esterzili"
+      },
+      "android": {
+        "buildType": "app-bundle"
+      },
+      "cache": {
+        "key": "eas-prod"
+      },
+      "channel": "prod"
+    }
+  },
+  "cli": {
+    "promptToConfigurePushNotifications": false
+  }
+}

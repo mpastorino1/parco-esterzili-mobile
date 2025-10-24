@@ -1,0 +1,84 @@
+{
+  "name": "esterzili",
+  "version": "1.1.3",
+  "main": "src/index.tsx",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web",
+    "prebuild": "expo prebuild",
+    "doctor": "npx expo-doctor",
+    "credentials:dev": "cp credentials.dev.json credentials.json",
+    "credentials:staging": "cp credentials.staging.json credentials.json",
+    "credentials:prod": "cp credentials.prod.json credentials.json",
+    "build:dev:android": "yarn credentials:dev && eas build --platform android --local --profile dev",
+    "build:dev:ios": "yarn credentials:dev && eas build --platform ios --local --profile dev",
+    "build:staging:android": "yarn credentials:staging && eas build --platform android --local --profile staging",
+    "build:staging:ios": "yarn credentials:staging && eas build --platform ios --local --profile staging",
+    "build:prod:android": "yarn credentials:prod && eas build --platform android --local --profile prod",
+    "build:prod:ios": "yarn credentials:prod && eas build --platform ios --local --profile prod"
+  },
+  "dependencies": {
+    "@gorhom/bottom-sheet": "^4.4.7",
+    "@react-navigation/native": "^6.1.7",
+    "@react-navigation/native-stack": "^6.9.13",
+    "@rnmapbox/maps": "10.1.42-rc.0",
+    "@turf/distance": "^6.5.0",
+    "@types/webpack-env": "^1.18.1",
+    "expo": "^53.0.0",
+    "expo-av": "~15.1.7",
+    "expo-build-properties": "~0.14.8",
+    "expo-clipboard": "~7.1.5",
+    "expo-dev-client": "~5.2.4",
+    "expo-device": "~7.1.4",
+    "expo-image": "~2.4.1",
+    "expo-linking": "~7.1.7",
+    "expo-localization": "~16.1.6",
+    "expo-location": "~18.1.6",
+    "expo-notifications": "~0.31.4",
+    "expo-speech": "~13.1.7",
+    "expo-splash-screen": "~0.30.10",
+    "expo-status-bar": "~2.2.3",
+    "expo-system-ui": "~5.0.11",
+    "expo-task-manager": "~13.1.6",
+    "expo-updates": "~0.28.17",
+    "i18n-js": "^4.2.3",
+    "react": "19.0.0",
+    "react-native": "0.79.5",
+    "react-native-gesture-handler": "~2.24.0",
+    "react-native-mmkv": "^2.8.3",
+    "react-native-beacon": "file:.yalc/react-native-beacon",
+    "react-native-onboarding-swiper": "^1.2.0",
+    "react-native-pager-view": "6.7.1",
+    "react-native-paper": "^5.6.0",
+    "react-native-reanimated": "~3.17.4",
+    "react-native-safe-area-context": "5.4.0",
+    "react-native-screens": "~4.11.1",
+    "react-native-toast-message": "^2.3.3",
+    "zustand": "^4.3.8"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@types/react": "~19.0.10",
+    "@types/react-native-onboarding-swiper": "^1.1.4",
+    "patch-package": "^7.0.0",
+    "postinstall-postinstall": "^2.1.0",
+    "typescript": "~5.8.3"
+  },
+  "resolutions": {
+    "@types/react-native-onboarding-swiper/react-native": "0.79.5"
+  },
+  "expo": {
+    "doctor": {
+      "reactNativeDirectoryCheck": {
+        "exclude": [
+          "@turf/distance"
+        ],
+        "listUnknownPackages": false
+      }
+    }
+  },
+  "private": true,
+  "postinstall": "patch-package"
+}

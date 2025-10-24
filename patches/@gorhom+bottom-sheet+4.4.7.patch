@@ -1,0 +1,16 @@
+diff --git a/node_modules/@gorhom/bottom-sheet/src/components/bottomSheetHandleContainer/BottomSheetHandleContainer.tsx b/node_modules/@gorhom/bottom-sheet/src/components/bottomSheetHandleContainer/BottomSheetHandleContainer.tsx
+index 2219e0f..7eb92a4 100644
+--- a/node_modules/@gorhom/bottom-sheet/src/components/bottomSheetHandleContainer/BottomSheetHandleContainer.tsx
++++ b/node_modules/@gorhom/bottom-sheet/src/components/bottomSheetHandleContainer/BottomSheetHandleContainer.tsx
+@@ -92,10 +92,7 @@ function BottomSheetHandleContainerComponent({
+     >
+       <Animated.View
+         key="BottomSheetHandleContainer"
+-        accessible={true}
+-        accessibilityRole="adjustable"
+-        accessibilityLabel="Bottom Sheet handle"
+-        accessibilityHint="Drag up or down to extend or minimize the Bottom Sheet"
++        importantForAccessibility={'no-hide-descendants'}
+         onLayout={handleContainerLayout}
+       >
+         <HandleComponent
