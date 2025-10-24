@@ -1,8 +1,5 @@
-import { AppState, Linking } from "react-native";
-import { MaterialCommunityIcons } from "@expo/vector-icons";
 import * as Notifications from "expo-notifications";
-import { useEffect, useRef } from "react";
-import { useTheme } from "react-native-paper";
+import { useEffect } from "react";
 import Beacon from "react-native-beacon";
 import { POI_MAP_BY_BEACON_MINOR, Place } from "./constants";
 import {
@@ -13,11 +10,9 @@ import {
 import { useI18n } from "./useI18n";
 
 export function useBeacons() {
-  const theme = useTheme();
   const { i18n } = useI18n();
   const onBoardingShown = useAppStore((state) => state.onBoardingShown);
 
-  const toastIdRef = useRef<string | null>(null);
   const setPlace = beaconStore((state) => state.setPlace);
   const setBeacons = beaconStore((state) => state.setBeacons);
   const clearBeacons = beaconStore((state) => state.clearBeacons);
@@ -92,72 +87,26 @@ export function useBeacons() {
             previousPlace?.timestamp < Date.now() - 60 * 1000 * 5) // 5 minutes
         ) {
           const url = "esterzili://place/" + place.id;
-          const canOpenPlaceScreen = await Linking.canOpenURL(url);
-          if (AppState.currentState === "active") {
-            if (toastIdRef.current) {
-              toast.update(
-                toastIdRef.current,
-                `${i18n.t(`poi.${place.id}.title`)}\n${i18n.t(
-                  "notification.body"
-                )}`,
-                {
-                  data: place,
-                  icon: (
-                    <MaterialCommunityIcons
-                      name={place.icon}
-                      size={48}
-                      color={theme.colors.onBackground}
-                    />
-                  ),
-                  onPress() {
-                    if (canOpenPlaceScreen) {
-                      Linking.openURL(url);
-                      toast.hide(toastIdRef.current!);
-                    }
-                  },
-                }
-              );
-            } else {
-              toastIdRef.current = toast.show(
-                `${i18n.t(`poi.${place.id}.title`)}\n${i18n.t(
-                  "notification.body"
-                )}`,
-                {
-                  type: "normal",
-                  duration: 60 * 1000, // 1 minute
-                  icon: (
-                    <MaterialCommunityIcons
-                      name={place.icon}
-                      size={48}
-                      color={theme.colors.onBackground}
-                    />
-                  ),
-                  onClose() {
-                    toastIdRef.current = null;
-                  },
-                  onPress() {
-                    if (canOpenPlaceScreen) {
-                      Linking.openURL(url);
-                      toast.hide(toastIdRef.current!);
-                    }
-                  },
-                  data: place,
-                }
-              );
-            }
-          } else {
-            Notifications.scheduleNotificationAsync({
-              identifier: "beacon",
-              content: {
-                title: i18n.t(`poi.${place.id}.title`),
-                body: i18n.t("notification.body"),
-                data: {
-                  url,
-                },
+          const notificationIdentifier = `beacon-${place.id}`;
+
+          await Notifications.dismissNotificationAsync(
+            notificationIdentifier
+          ).catch(() => {});
+          await Notifications.cancelScheduledNotificationAsync(
+            notificationIdentifier
+          ).catch(() => {});
+
+          await Notifications.scheduleNotificationAsync({
+            identifier: notificationIdentifier,
+            content: {
+              title: i18n.t(`poi.${place.id}.title`),
+              body: i18n.t("notification.body"),
+              data: {
+                url,
               },
-              trigger: null,
-            });
-          }
+            },
+            trigger: null,
+          });
         }
       });
       Beacon.startBeaconScan([

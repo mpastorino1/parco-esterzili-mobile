@@ -1,11 +1,11 @@
 import * as Location from "expo-location";
-import { AYMERICH_BOUNDS } from "./constants";
+import { MAP_BOUNDS } from "./constants";
 
 export function isInsidePark(location: Location.LocationObject): boolean {
   const { latitude, longitude } = location.coords;
 
-  const [swLongitude, swLatitude] = AYMERICH_BOUNDS.sw;
-  const [neLongitude, neLatitude] = AYMERICH_BOUNDS.ne;
+  const [swLongitude, swLatitude] = MAP_BOUNDS.sw;
+  const [neLongitude, neLatitude] = MAP_BOUNDS.ne;
 
   if (latitude < swLatitude || latitude > neLatitude) {
     return false;

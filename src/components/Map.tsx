@@ -10,7 +10,7 @@ import {
   ShapeSource,
   UserLocation,
 } from "@rnmapbox/maps";
-import { AYMERICH_BOUNDS, POI, POI_BOUNDS, Place } from "../constants";
+import { MAP_BOUNDS, POI, POI_BOUNDS, Place } from "../constants";
 import { TouchableOpacity, View, useWindowDimensions } from "react-native";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { useI18n } from "../useI18n";
@@ -44,7 +44,7 @@ const Map = forwardRef<Camera, MapProps>((props: MapProps, ref) => {
 
   return (
     <MapView
-      styleURL={"mapbox://styles/gsto98/clhepuw2a017401pgd8i9ekkp"}
+      // styleURL={"mapbox://styles/mapbox/light-v11"}
       compassEnabled={false}
       scaleBarEnabled={false}
       attributionEnabled={false}
@@ -55,7 +55,7 @@ const Map = forwardRef<Camera, MapProps>((props: MapProps, ref) => {
     >
       <Camera
         zoomLevel={15}
-        maxBounds={AYMERICH_BOUNDS}
+        maxBounds={MAP_BOUNDS}
         ref={cameraRef}
         bounds={POI_BOUNDS}
         animationDuration={0}
