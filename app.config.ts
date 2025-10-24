@@ -69,12 +69,6 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
         color: "#ffffff",
       },
     ],
-    [
-      "expo-updates",
-      {
-        username: "green-share",
-      },
-    ],
     "expo-localization",
     "./plugins/withAndroidLocationStrings.js",
     "./android-manifest.plugin.js",
@@ -111,12 +105,5 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
       projectId: "427712a9-1ecb-4951-831a-bb3d113c5b3a",
     },
     variant: APP_VARIANT,
-  },
-  owner: "green-share",
-  updates: {
-    url: "https://u.expo.dev/427712a9-1ecb-4951-831a-bb3d113c5b3a",
-  },
-  runtimeVersion: {
-    policy: "appVersion",
   },
 });

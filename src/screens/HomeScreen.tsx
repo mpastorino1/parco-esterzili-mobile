@@ -1,4 +1,4 @@
-import { Alert, View } from "react-native";
+import { View } from "react-native";
 import {
   ActivityIndicator,
   Button,
@@ -20,7 +20,6 @@ import { NativeStackScreenProps } from "@react-navigation/native-stack";
 import { RootStackParamList } from "../routes";
 import { useI18n } from "../useI18n";
 import { isInsidePark } from "../utils";
-import * as Updates from "expo-updates";
 import Constants from "expo-constants";
 
 export type HomeScreenProps = NativeStackScreenProps<
@@ -30,27 +29,6 @@ export type HomeScreenProps = NativeStackScreenProps<
 
 export default function HomeScreen(props: HomeScreenProps) {
   const styles = useStyles();
-
-  async function onFetchUpdateAsync() {
-    try {
-      const update = await Updates.checkForUpdateAsync();
-
-      if (update.isAvailable) {
-        await Updates.fetchUpdateAsync();
-        Alert.alert(
-          "Update available",
-          "The app will reload to apply the update."
-        );
-        await Updates.reloadAsync();
-      } else {
-        Alert.alert("No update available", "The app is up to date.");
-      }
-    } catch (error) {
-      Alert.alert("Error", `Error fetching latest Expo update: ${error}`);
-    }
-  }
-
-  onFetchUpdateAsync();
 
   return (
     <View style={styles.container}>
