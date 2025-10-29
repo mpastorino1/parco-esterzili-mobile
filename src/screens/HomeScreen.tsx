@@ -58,7 +58,7 @@ const MapContainer = (props: HomeScreenProps) => {
   const variant =
     (Constants.expoConfig?.extra as { variant?: string } | undefined)
       ?.variant;
-  const showDebug = variant !== "prod";
+  const showDebug = true;
 
   useEffect(() => {
     if (cameraRef.current) {

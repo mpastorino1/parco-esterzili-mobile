@@ -160,7 +160,7 @@ const Navigator = () => {
   const variant =
     (Constants.expoConfig?.extra as { variant?: string } | undefined)
       ?.variant;
-  const showDebugScreen = variant !== "prod";
+  const showDebugScreen = true;
 
   const onBoardingShown = useAppStore((state) => state.onBoardingShown);
 
@@ -279,6 +279,17 @@ const Navigator = () => {
 };
 
 async function registerForPushNotificationsAsync() {
+  const { status: existingStatus } =
+    await Notifications.getPermissionsAsync();
+  let finalStatus = existingStatus;
+  if (existingStatus !== "granted") {
+    const { status } = await Notifications.requestPermissionsAsync();
+    finalStatus = status;
+  }
+  if (finalStatus !== "granted") {
+    console.warn("Notification permissions not granted");
+  }
+
   if (Platform.OS === "android") {
     await Notifications.setNotificationChannelAsync("default", {
       name: "default",

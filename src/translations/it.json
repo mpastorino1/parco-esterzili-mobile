@@ -151,6 +151,14 @@
     "piazzale": {
       "title": "Piazzale",
       "info": "Benvenuti nell'area principale del Parco Aymerich, situato nella splendida zona picnic di Laconi. Questo parco incantevole è immerso nella natura rigogliosa e offre un'oasi di tranquillità per gli amanti della natura e delle attività all'aperto. L'info point è il punto di partenza ideale per esplorare tutte le meraviglie che il parco ha da offrire. Qui troverete una vasta gamma di informazioni utili, mappe dettagliate e consigli sui sentieri escursionistici più suggestivi, così come informazioni sulle specie di piante e animali che popolano l'area. Gli amichevoli membri del personale saranno lieti di fornirvi assistenza e di rispondere alle vostre domande, per aiutarvi a pianificare al meglio la vostra visita al parco. Sia che siate interessati a lunghe passeggiate, a pic-nic in famiglia o a semplici momenti di relax in mezzo alla natura, l'info point del Parco Aymerich sarà il vostro punto di riferimento per godervi al meglio questa straordinaria oasi verde."
+    },
+    "casa": {
+      "title": "Casa Matteo",
+      "info": "La casa di Matteo, aggiunta per scopi dimostrativi."
+    },
+    "casa-mebi": {
+      "title": "Casa Mebi",
+      "info": "La casa di Mebi, aggiunta per scopi dimostrativi."
     }
   }
 }

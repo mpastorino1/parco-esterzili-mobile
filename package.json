@@ -1,11 +1,12 @@
 {
   "name": "esterzili",
-  "version": "1.1.3",
+  "version": "0.0.2",
   "main": "src/index.tsx",
   "scripts": {
     "start": "expo start",
     "android": "expo run:android",
     "ios": "expo run:ios",
+    "ios-device": "expo run:ios --device",
     "web": "expo start --web",
     "prebuild": "expo prebuild",
     "doctor": "npx expo-doctor",

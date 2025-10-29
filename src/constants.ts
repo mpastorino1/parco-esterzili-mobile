@@ -30,7 +30,6 @@ export type Place = {
 export const PLACES: Place[] = [
   {
     id: "casa",
-    // title: "Cascata maggiore",
     coordinates: {
       longitude: 9.097738936348684,
       latitude: 39.297275921677354,
@@ -49,7 +48,6 @@ export const PLACES: Place[] = [
   },
   {
     id: "casa-mebi",
-    // title: "Grotte",
     coordinates: {
       longitude: 9.097324281082722,
       latitude: 39.29620687437821,
@@ -66,6 +64,24 @@ export const PLACES: Place[] = [
       triggerDistance: 3,
     },
   },
+  {
+    id: "san-gemiliano",
+    coordinates: {
+      longitude: 9.068912953929502,
+      latitude: 39.34019670294648,
+    },
+    image: require("./assets/grotteMaimone.jpg"),
+    mediaType: ["image", "audio"],
+    icon: "church",
+    type: "poi",
+    beacon: {
+      id: "all",
+      uuid: "E4507BF5-F125-4972-AEF0-5FCA35225FAB",
+      major: 4,
+      minor: 8145,
+      triggerDistance: 3,
+    },
+  },
 ];
 
 export const POI = PLACES.filter((p) => p.type === "poi");
@@ -79,6 +95,35 @@ export const POI_MAP_BY_BEACON_MINOR = POI.reduce((acc, poi) => {
 }, {} as Record<string, Place>);
 
 export const POI_BOUNDS = MAP_BOUNDS;
+
+export type BeaconRegionConfig = {
+  id: string;
+  uuid: string;
+  major?: number;
+  minor?: number;
+};
+
+export const BEACON_REGIONS: BeaconRegionConfig[] = Array.from(
+  new Map(
+    PLACES.map((place) => {
+      const { beacon } = place;
+      const key = [
+        beacon.uuid,
+        beacon.major ?? "all",
+        beacon.minor ?? "all",
+      ].join("-");
+      return [
+        key,
+        {
+          id: `region-${place.id}`,
+          uuid: beacon.uuid,
+          ...(beacon.major !== undefined ? { major: beacon.major } : {}),
+          ...(beacon.minor !== undefined ? { minor: beacon.minor } : {}),
+        } satisfies BeaconRegionConfig,
+      ];
+    })
+  ).values()
+);
 
 export function usePlace(placeId?: Place["id"]) {
   const [place, setPlace] = useState<Place | null>(null);

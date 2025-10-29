@@ -1,7 +1,7 @@
 import * as Notifications from "expo-notifications";
 import { useEffect } from "react";
 import Beacon from "react-native-beacon";
-import { POI_MAP_BY_BEACON_MINOR, Place } from "./constants";
+import { BEACON_REGIONS, POI_MAP_BY_BEACON_MINOR, Place } from "./constants";
 import {
   BeaconReading,
   beaconStore,
@@ -109,11 +109,14 @@ export function useBeacons() {
           });
         }
       });
-      Beacon.startBeaconScan([
-        {
-          id: "all",
-        },
-      ]);
+      Beacon.startBeaconScan(
+        BEACON_REGIONS.map((region) => ({
+          id: region.id,
+          uuid: region.uuid,
+          ...(region.major !== undefined ? { major: region.major } : {}),
+          ...(region.minor !== undefined ? { minor: region.minor } : {}),
+        }))
+      );
     }
 
     if (onBoardingShown) {

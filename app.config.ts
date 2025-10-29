@@ -11,7 +11,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   name: APP_NAME,
   scheme: "esterzili",
   slug: "esterzili",
-  version: "1.1.2",
+  version: "0.0.1",
   orientation: "portrait",
   icon: IS_PROD
     ? "./src/assets/icon.png"
@@ -76,7 +76,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   ],
   assetBundlePatterns: ["**/*"],
   ios: {
-    buildNumber: "8",
+    buildNumber: "2",
     userInterfaceStyle: "automatic",
     supportsTablet: false,
     bundleIdentifier: IS_PROD
@@ -89,7 +89,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
     },
   },
   android: {
-    versionCode: 8,
+    versionCode: 2,
     permissions: [
       "android.permission.ACCESS_COARSE_LOCATION",
       "android.permission.ACCESS_FINE_LOCATION",
@@ -102,7 +102,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   },
   extra: {
     eas: {
-      projectId: "427712a9-1ecb-4951-831a-bb3d113c5b3a",
+      projectId: "7da367bf-a2b0-46ec-b669-6a61e9986f5b",
     },
     variant: APP_VARIANT,
   },
