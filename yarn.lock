@@ -853,7 +853,7 @@
     wrap-ansi "^7.0.0"
     ws "^8.12.1"
 
-"@expo/code-signing-certificates@0.0.5", "@expo/code-signing-certificates@^0.0.5":
+"@expo/code-signing-certificates@^0.0.5":
   version "0.0.5"
   resolved "https://registry.yarnpkg.com/@expo/code-signing-certificates/-/code-signing-certificates-0.0.5.tgz#a693ff684fb20c4725dade4b88a6a9f96b02496c"
   integrity sha512-BNhXkY1bblxKZpltzAx98G2Egj9g1Q+JRcvR7E99DOj862FTCX+ZPsAUtPTr7aHxwtrL7+fL3r0JSmM9kBm+Bw==
@@ -1892,11 +1892,6 @@ anymatch@^3.0.3:
     normalize-path "^3.0.0"
     picomatch "^2.0.4"
 
-arg@4.1.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/arg/-/arg-4.1.0.tgz#583c518199419e0037abb74062c37f8519e575f0"
-  integrity sha512-ZWc51jO3qegGkVh8Hwpv636EkbesNV5ZNQPCtRa+0qytRYPEs9IYT9qITY9buezqUH5uqyzlWLcufrzU2rffdg==
-
 arg@^5.0.2:
   version "5.0.2"
   resolved "https://registry.yarnpkg.com/arg/-/arg-5.0.2.tgz#c81433cc427c92c4dcf4865142dbca6f15acd59c"
@@ -2784,11 +2779,6 @@ expo-device@~7.1.4:
   dependencies:
     ua-parser-js "^0.7.33"
 
-expo-eas-client@~0.14.4:
-  version "0.14.4"
-  resolved "https://registry.yarnpkg.com/expo-eas-client/-/expo-eas-client-0.14.4.tgz#33a111d565a58bb425565616086f9abb686f903e"
-  integrity sha512-TSL1BbBFIuXchJmPgbPnB7cGpOOuSGJcQ/L7gij/+zPjExwvKm5ckA5dlSulwoFhH8zQt4vb7bfISPSAWQVWBw==
-
 expo-file-system@~18.1.11:
   version "18.1.11"
   resolved "https://registry.yarnpkg.com/expo-file-system/-/expo-file-system-18.1.11.tgz#a563c715c4bb5c18729d6d104e8c6cdfbd383e69"
@@ -2896,11 +2886,6 @@ expo-status-bar@~2.2.3:
   dependencies:
     react-native-edge-to-edge "1.6.0"
     react-native-is-edge-to-edge "^1.1.6"
-
-expo-structured-headers@~4.1.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/expo-structured-headers/-/expo-structured-headers-4.1.0.tgz#5475fc3f9559701cc755fd2d50605f8817d42ad0"
-  integrity sha512-2X+aUNzC/qaw7/WyUhrVHNDB0uQ5rE12XA2H/rJXaAiYQSuOeU90ladaN0IJYV9I2XlhYrjXLktLXWbO7zgbag==
 
 expo-system-ui@~5.0.11:
   version "5.0.11"

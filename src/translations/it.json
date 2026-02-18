@@ -159,6 +159,18 @@
     "casa-mebi": {
       "title": "Casa Mebi",
       "info": "La casa di Mebi, aggiunta per scopi dimostrativi."
+    },
+    "poi-1": {
+      "title": "Punto di interesse 1",
+      "info": "Descrizione del punto di interesse 1, aggiunta per scopi dimostrativi."
+    },
+    "poi-2": {
+      "title": "Punto di interesse 2",
+      "info": "Descrizione del punto di interesse 2, aggiunta per scopi dimostrativi."
+    },
+    "poi-3": {
+      "title": "Punto di interesse 3",
+      "info": "Descrizione del punto di interesse 3, aggiunta per scopi dimostrativi."
     }
   }
 }

@@ -71,7 +71,12 @@ const Map = forwardRef<Camera, MapProps>((props: MapProps, ref) => {
           />
         </ShapeSource>
       )}
-      <UserLocation showsUserHeadingIndicator animated />
+      <UserLocation
+        visible={true}
+        androidRenderMode="gps"
+        showsUserHeadingIndicator
+        animated
+      />
     </MapView>
   );
 });

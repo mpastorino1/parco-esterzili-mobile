@@ -143,7 +143,7 @@ const MapContainer = (props: HomeScreenProps) => {
           accessibilityLabel={i18n.t("home.infoButton")}
         />
         <Divider />
-        {showDebug ? (
+        {!showDebug ? (
           <View>
             <IconButton
               onPress={openDebugBeacons}

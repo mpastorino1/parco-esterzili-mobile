@@ -1,17 +1,20 @@
 import * as Notifications from "expo-notifications";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import Beacon from "react-native-beacon";
 import { BEACON_REGIONS, POI_MAP_BY_BEACON_MINOR, Place } from "./constants";
 import {
   BeaconReading,
   beaconStore,
   useAppStore,
+  useLocationStore,
 } from "./store/states";
 import { useI18n } from "./useI18n";
+import { getDistance } from "./utils";
 
 export function useBeacons() {
   const { i18n } = useI18n();
   const onBoardingShown = useAppStore((state) => state.onBoardingShown);
+  const lastNotificationTimes = useRef<Record<string, number>>({});
 
   const setPlace = beaconStore((state) => state.setPlace);
   const setBeacons = beaconStore((state) => state.setBeacons);
@@ -69,10 +72,25 @@ export function useBeacons() {
             candidatePlace &&
             closestBeacon.distance < candidatePlace.beacon.triggerDistance
           ) {
-            place = candidatePlace;
+            // Check if user is also geographically close to the place
+            const currentLocation = useLocationStore.getState().location;
+            if (currentLocation) {
+              const distanceToPlace = getDistance(
+                currentLocation.coords,
+                candidatePlace.coordinates
+              );
+              // Only trigger if within 100 meters of the actual place
+              if (distanceToPlace < 100) {
+                place = candidatePlace;
+              }
+            } else {
+              // If no location available, we might want to be conservative and not trigger,
+              // or trigger anyway. Given the user's request to avoid spam, let's require location.
+              // place = candidatePlace; 
+            }
           }
         }
-        const { closestPlace: previousPlace } = beaconStore.getState();
+        
         // everytime the closest place changes, we update the state
         if (place) {
           setPlace({
@@ -80,33 +98,37 @@ export function useBeacons() {
             timestamp: Date.now(),
           });
         }
-        // if the closest place is different from the previous one, we show a notification
-        if (
-          place &&
-          (previousPlace?.id !== place.id ||
-            previousPlace?.timestamp < Date.now() - 60 * 1000 * 5) // 5 minutes
-        ) {
-          const url = "esterzili://place/" + place.id;
-          const notificationIdentifier = `beacon-${place.id}`;
+        
+        // Check cooldown for notification
+        if (place) {
+          const now = Date.now();
+          const lastTime = lastNotificationTimes.current[place.id] || 0;
+          
+          if (now - lastTime > 60 * 1000 * 5) { // 5 minutes cooldown per POI
+            lastNotificationTimes.current[place.id] = now;
+            
+            const url = "esterzili://place/" + place.id;
+            const notificationIdentifier = `beacon-${place.id}`;
 
-          await Notifications.dismissNotificationAsync(
-            notificationIdentifier
-          ).catch(() => {});
-          await Notifications.cancelScheduledNotificationAsync(
-            notificationIdentifier
-          ).catch(() => {});
+            await Notifications.dismissNotificationAsync(
+              notificationIdentifier
+            ).catch(() => {});
+            await Notifications.cancelScheduledNotificationAsync(
+              notificationIdentifier
+            ).catch(() => {});
 
-          await Notifications.scheduleNotificationAsync({
-            identifier: notificationIdentifier,
-            content: {
-              title: i18n.t(`poi.${place.id}.title`),
-              body: i18n.t("notification.body"),
-              data: {
-                url,
+            await Notifications.scheduleNotificationAsync({
+              identifier: notificationIdentifier,
+              content: {
+                title: i18n.t(`poi.${place.id}.title`),
+                body: i18n.t("notification.body"),
+                data: {
+                  url,
+                },
               },
-            },
-            trigger: null,
-          });
+              trigger: null,
+            });
+          }
         }
       });
       Beacon.startBeaconScan(
