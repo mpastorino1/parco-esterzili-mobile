@@ -6,10 +6,8 @@ import {
   BeaconReading,
   beaconStore,
   useAppStore,
-  useLocationStore,
 } from "./store/states";
 import { useI18n } from "./useI18n";
-import { getDistance } from "./utils";
 
 export function useBeacons() {
   const { i18n } = useI18n();
@@ -72,22 +70,7 @@ export function useBeacons() {
             candidatePlace &&
             closestBeacon.distance < candidatePlace.beacon.triggerDistance
           ) {
-            // Check if user is also geographically close to the place
-            const currentLocation = useLocationStore.getState().location;
-            if (currentLocation) {
-              const distanceToPlace = getDistance(
-                currentLocation.coords,
-                candidatePlace.coordinates
-              );
-              // Only trigger if within 100 meters of the actual place
-              if (distanceToPlace < 100) {
-                place = candidatePlace;
-              }
-            } else {
-              // If no location available, we might want to be conservative and not trigger,
-              // or trigger anyway. Given the user's request to avoid spam, let's require location.
-              // place = candidatePlace; 
-            }
+            place = candidatePlace;
           }
         }
         

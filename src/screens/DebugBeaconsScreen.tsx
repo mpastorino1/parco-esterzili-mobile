@@ -92,7 +92,7 @@ export default function DebugBeaconsScreen(_: DebugBeaconsScreenProps) {
         {sortedBeacons.length === 0 ? (
           <List.Item
             title="No beacons in range"
-            description="Enable Bluetooth, grant location permissions, and approach a configured beacon."
+            description="Enable Bluetooth, grant beacon permissions, and approach a configured beacon."
             left={(props) => <List.Icon {...props} icon="access-point-off" />}
           />
         ) : (

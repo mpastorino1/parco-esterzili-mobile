@@ -11,9 +11,9 @@
       "next": "Continue"
     },
     "three": {
-      "title": "Turn on location services",
-      "subtitle": "Using your position, we can provide you with information on how to reach the entrance, exits and sites of interest, as well as allowing you to find your way around the Park.",
-      "next": "Turn on localization"
+      "title": "Location is optional",
+      "subtitle": "Location is used for directions and map orientation. Beacon proximity notifications also work without GPS.",
+      "next": "Continue"
     },
     "four": {
       "title": "Stay up to date with notifications",

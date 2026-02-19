@@ -2,22 +2,31 @@ import { useEffect } from "react";
 import { useAppStore, useLocationStore } from "./store/states";
 import * as Location from "expo-location";
 
-export async function useWatchLocation() {
-  const locationStore = useLocationStore();
+export function useWatchLocation() {
+  const setLocation = useLocationStore((state) => state.setLocation);
   const onBoardingShown = useAppStore((state) => state.onBoardingShown);
 
   useEffect(() => {
     let listener: Location.LocationSubscription | null = null;
 
     const watchLocation = async () => {
-      listener = await Location.watchPositionAsync(
-        {
-          accuracy: Location.Accuracy.BestForNavigation,
-        },
-        (location) => {
-          locationStore.setLocation(location);
+      try {
+        const { status } = await Location.getForegroundPermissionsAsync();
+        if (status !== "granted") {
+          return;
         }
-      );
+
+        listener = await Location.watchPositionAsync(
+          {
+            accuracy: Location.Accuracy.BestForNavigation,
+          },
+          (location) => {
+            setLocation(location);
+          }
+        );
+      } catch (error) {
+        console.warn("Unable to watch location", error);
+      }
     };
 
     if (onBoardingShown) {
@@ -27,5 +36,5 @@ export async function useWatchLocation() {
     return () => {
       listener?.remove();
     };
-  }, [onBoardingShown]);
+  }, [onBoardingShown, setLocation]);
 }

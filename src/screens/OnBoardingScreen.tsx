@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import { View, Text, Image, ImageProps } from "react-native";
 import { Button, useTheme } from "react-native-paper";
-import * as Location from "expo-location";
 import { useMakeStyle } from "../useStyle";
 import { useAppStore } from "../store/states";
 import { SafeAreaView } from "react-native-safe-area-context";
@@ -43,7 +42,6 @@ export default function OnBoardingScreen() {
   };
 
   const handleLocationClick = async () => {
-    await Location.requestForegroundPermissionsAsync();
     goNext();
   };
 

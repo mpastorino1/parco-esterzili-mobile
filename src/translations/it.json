@@ -11,9 +11,9 @@
       "next": "Continua"
     },
     "three": {
-      "title": "Attiva i servizi di localizzazione",
-      "subtitle": "Usando la tua posizione possiamo fornirti indicazioni su come raggiungere l’ingresso, le uscite e i siti di interesse, oltre a permetterti di orientarti all’interno del Parco.",
-      "next": "Attiva la localizzazione"
+      "title": "Localizzazione facoltativa",
+      "subtitle": "La posizione serve per le indicazioni stradali e l’orientamento in mappa. Le notifiche di prossimità beacon funzionano anche senza GPS.",
+      "next": "Continua"
     },
     "four": {
       "title": "Resta aggiornato con le notifiche",
