@@ -52,22 +52,11 @@ export default function CreditsScreen(props: CreditsScreenProps) {
             source={require("../assets/logo-sardegna-foreste.png")}
           />
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => openLink("https://www.comune.laconi.or.it/")}>
-          <Image
-            accessibilityLabel="Comune di Laconi"
-            accessibilityRole="text"
-            style={styles.logo}
-            source={require("../assets/logo-comune-laconi.png")}
-          />
-        </TouchableOpacity>
-        <TouchableOpacity onPress={() => openLink("https://www.menhirmuseum.it/")}>
-          <Image
-            accessibilityLabel="Museo di Laconi (Menhir Museum)"
-            accessibilityRole="text"
-            style={styles.logo}
-            source={require("../assets/logo-museo-laconi.png")}
-          />
-        </TouchableOpacity>
+      </View>
+      <View style={styles.placeholderContainer}>
+        <Text style={styles.placeholderText}>
+          Comune di Esterzili (dati in aggiornamento)
+        </Text>
       </View>
       <Text style={styles.sectionTitle}>{i18n.t("credits.realizationBy")}</Text>
       <View style={styles.logoContainer}>
@@ -113,6 +102,19 @@ const useStyles = () => {
       flexDirection: "row",
       marginTop: 16,
       marginBottom: 32,
+    },
+    placeholderContainer: {
+      marginBottom: 32,
+      paddingHorizontal: 14,
+      paddingVertical: 10,
+      borderRadius: 12,
+      borderWidth: 1,
+      borderColor: theme.colors.outlineVariant,
+    },
+    placeholderText: {
+      color: theme.colors.onBackground,
+      textAlign: "center",
+      fontWeight: "600",
     },
     logo: {
       width: 80,

@@ -2,7 +2,7 @@ import React from "react";
 import { Text, ScrollView, Image, Linking } from "react-native";
 import { Button, useTheme } from "react-native-paper";
 import { useMakeStyle } from "../useStyle";
-import { PLACES } from "../constants";
+import { ESTERZILI_CENTER } from "../constants";
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
 import { RootStackParamList } from "../routes";
 import { useI18n } from "../useI18n";
@@ -42,9 +42,7 @@ export default function WhereScreen() {
 }
 
 const openGoogleMaps = async () => {
-  const {
-    coordinates: { latitude, longitude },
-  } = PLACES.find((poi) => poi.id === "ingresso_san_martino")!;
+  const { latitude, longitude } = ESTERZILI_CENTER;
 
   const url = `https://www.google.com/maps/dir/?api=1&destination=${latitude},${longitude}`;
 

@@ -14,12 +14,7 @@ export type ContactScreenProps = NativeStackScreenProps<
 
 export default function ContactScreen() {
   const styles = useStyles();
-  const theme = useTheme();
   const { i18n } = useI18n();
-
-  const logo = theme.dark
-    ? require("../assets/Logo-200w:ondark.png")
-    : require("../assets/Logo-200w.png");
 
   return (
     <ScrollView
@@ -28,10 +23,9 @@ export default function ContactScreen() {
       contentInsetAdjustmentBehavior="automatic"
     >
       <InfoCell
-        icon={logo}
-        title="Laconi"
-        phone="+39 0782 867064"
-        mail="info@comune.laconi.or.it"
+        title="Comune di Esterzili (dati in aggiornamento)"
+        phone="+39 000 000 0000"
+        mail="contatti in aggiornamento"
       />
       <InfoCell
         icon={require("../assets/logo-comunita-montana.png")}
@@ -44,18 +38,6 @@ export default function ContactScreen() {
         title="Sardegna Foreste"
         phone="+39 0782 802 231"
         mail="lorem@gmail.com"
-      />
-      <InfoCell
-        icon={require("../assets/logo-comune-laconi.png")}
-        title="Comune di Laconi"
-        phone="+39 0782 866 200"
-        mail="info@comune.laconi.or.it"
-      />
-      <InfoCell
-        icon={require("../assets/logo-museo-laconi.png")}
-        title="Museo di Laconi (Menhir Museum)"
-        phone="+39 347 123 4567"
-        mail="urp@forestas.it"
       />
       <InfoCell title={i18n.t("contact.sanitaryEmergency")} phone="118" />
       <InfoCell title={i18n.t("contact.carabinieri")} phone="112" />

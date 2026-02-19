@@ -2,7 +2,7 @@
   "onBoardingPage": {
     "one": {
       "title": "Esploriamo insieme il Parco",
-      "subtitle": "Benvenuta/o sull’app ufficiale del Parco Aymerich di Laconi. Segui i passaggi successivi per attivare le funzionalità e ricevere informazioni sui siti di interesse presenti nell’area.",
+      "subtitle": "Benvenuta/o sull'app ufficiale di Esterzili. Segui i passaggi successivi per attivare le funzionalità e ricevere informazioni sui siti di interesse presenti nel territorio.",
       "next": "Continua"
     },
     "two": {
@@ -64,7 +64,7 @@
   "where": {
     "headerTitle": "Come raggiungerci",
     "button": "Ottieni indicazioni",
-    "info": "Laconi si raggiunge lasciando la principale arteria stradale sarda, la SS 131, al bivio di Villasanta ed imboccando la SS 197 verso Barumini. All'altezza di Nurallao percorrere la SS 128 in direzione di Laconi. Qui il Parco è accessibile dalla via del Parco."
+    "info": "Esterzili si raggiunge dalla SS 131 uscendo verso il Sarcidano e proseguendo in direzione del comune. Usa il pulsante qui sotto per avviare la navigazione verso il centro di Esterzili."
   },
   "about": {
     "headerTitle": "Chi siamo"
@@ -96,81 +96,45 @@
     "body": "Tocca per scoprire di più!"
   },
   "poi": {
-    "cascata_maggiore": {
-      "title": "Cascata maggiore",
-      "info": "La cascata è così chiamata perché è la maggiore di altre cadute d’acqua presenti nel parco. Pur non essendo particolarmente alta (circa 12 metri), la Cascata Maggiore è comunque molto suggestiva e rappresenta una delle tante attrazioni naturali del Parco. Essa è, inoltre, interessante perché rappresenta un raro esempio di formazione di travertini di cascata. Le sue acque percolanti, infatti, sono molto ricche in bicarbonato di calcio. La cascata favorisce il rilascio di anidride carbonica, ulteriormente enfatizzato dalla presenza di muschi che con il processo fotosintetico contribuiscono ad abbassare il contenuto di acido carbonico delle acque. Ciò causa la precipitazione di carbonato di calcio che si deposita sulla parete della cascata e sui muschi alimentando il processo di travertinizzazione."
-    },
-    "grotte_maimone": {
-      "title": "Grotte Maimone",
-      "info": "Ancora visibili e molto ben conservate sono numerose grotte naturali, in parte nascoste dalla vegetazione rigogliosa e utilizzate come rifugio durante i bombardamenti del 1943. Furono proprio gli Aymerich ad aprire il parco affinchè potesse essere utilizzato come rifugio per gli sfollati cagliaritani."
-    },
-    "cedro_libano": {
-      "title": "Cedro del Libano",
-      "info": "CARATTERISTICHE BOTANICHE DELLA SPECIE\n\nAlbero dall'accrescimento lento e dal portamento a candelabro, con fusto policormico e rami che tendono a formare angoli di novanta gradi man mano che si erigono verso l'alto. Il risultato finale è una chioma fitta e piuttosto allargata, la cui cima col passare del tempo si appiattisce. La corteccia, di colore grigio scuro, nel tempo muta: dapprima liscia, poi si fessura longitudinalmente. Gli aghi, lunghi fino a 3 cm, di colore verde scuro sono portati sia singolarmente sui giovani rametti, sia in ciuffi di 20-30 su corti rametti laterali. Le strutture riproduttive, maschili e femminili, si trovano sulla stessa pianta. Le maschili, riunite in coni eretti cilindrici, rosso mattone, liberano il pollino giallo in ottobre-novembre, le femminili sono coni singoli arrotondati, più piccoli di quelli maschili; inizialmente verde brillante, in seguito di colore rosato.\n\nECOLOGIA E DISTRIBUZIONE DELLA SPECIE\n\nOriginario del Mediterraneo orientale, essa cresce spontanea sulle montagne del Libano, della Siria e in Turchia meridionale (monti Tauri). Predilige il clima freddo delle montagne: si trova infatti sui pendii rocciosi e calcarei esposti a nord, tra I 1300 e I 3000 metri di quota, dove l'inverno è nevoso e l'estate asciutta. Nei luoghi d'origine vegeta in boschi puri aperti. poveri di sottobosco, o in boschi misti con l'abete di Cilicia, il ginepro turco e diversi pini.\n\nCURIOSITA'\n\nNel suo ambiente originario sta diventando raro, tanto che per la sua protezione il governo libanese ha istituito tre aree protette. II legno, di ottima qualità, è apprezzato fin dall'antichità. Un tempo diffusissimo nel Medio Oriente, forniva un legno compatto, aromatico e durevole. E’ coltivato in parchi e giardini di tutta Europa dalla fine del 700. Questa pianta, dagli anelli presenti nel ramo primario capitozzato a circa m 1,30 da terra, presenta un'età di 130 anni."
-    },
-    "castello_aymerich": {
-      "title": "Castello Aymerich",
-      "info": "Immerso nell'incantevole scenario ambientale del parco è il Castelo medioevale degli Aymerich, costruito come avamposto al confine col giudicato di Cagliari, ma anche residenza estiva dei sovrani arborensi, di cui uno dei rami, i Lacon, aveva le proprie origini a Laconi. La storia del castello è strettamente legata la feudo di cui faceva parte. Questo, che comprendeva (oltre il castello) il borgo di Laconi, risulta affidato a Giovanni de Sena nel 1436; passo poi in mano di Enrico Enriquez e, nel 1479, in quella dei Castelvì, un membro della cui famiglia (Giacomo) nel 1603 divenne il primo marchese di Laconi. A questo casato subentrò in seguito quella degli Aymerich, artefici dell’edificazione del castello che, per lungo tempo, fu dimora di famiglia. Il castello è annoverato tra i più begli esempi di archittetura civile medioevale della Sardegna, nonostante della sua originaria costruzione, che risale al 1053, si conservi, purtroppo, solo una torre; i primi restauri datano alla seconda metà del XV secolo, e sono testimoniati da una bella sala principale in forme gotico catalane, dove è possibile vedere alcune sedute in pietra, con finestre, ad archi polilobati inflessi che richiamano paralleli esiti isolani (quali, ad esempio, la casa - forte di Villasor e il tornione di Ghilarza), che offrono un panorama del villaggio sottostante."
-    },
-    "servizi_igienici": {
-      "title": "Servizi igienici",
-      "info": "Situato strategicamente nel cuore del parco, i nostri servizi igienici sono progettati per offrire comfort e pulizia a tutti i visitatori. Con una struttura moderna e ben mantenuta, potrete godere di un ambiente igienico e confortevole durante la vostra visita al parco. I nostri servizi igienici sono facilmente raggiungibili da diverse aree del parco, grazie a segnaletica chiara e indicazioni ben visibili lungo i percorsi principali. Siamo impegnati a fornire un ambiente pulito e sicuro per i nostri visitatori, garantendo un'esperienza piacevole per tutti. Non esitate a fare una breve pausa presso i nostri servizi igienici per godervi un momento di relax e rinfrescarvi durante la vostra avventura nel parco."
-    },
-    "giardino_aymerich": {
-      "title": "Giardino Aymerich",
-      "info": "Conosciuto anche come il parco di Laconi, il giardino Aymerich può essere considerato un vero e proprio museo naturale. Si trova alle spalle dell’antico palazzo degli Aymerich, feudatari del paese fino al XIX secolo, e ricopre un’area di 22 ettari. Non è esagerato definirlo un giardino incantato, creato dal marchese Ignazio Aymerich, appassionato collezionista di piante esotiche, che anche ora crescono indisturbate. Tra i sentieri presenti nel giardino, spicca la presenza del corbezzolo, del pino della Corsica, del platano e del leccio, ma l’attenzione viene catturata anche dalle rovine del castello medievale di Laconi, costruito nel 1053. Nei pressi delle rovine, c’è anche il celebre cedro del Libano, una conifera sempreverde con gemme dimorfe e foglie agriformi."
-    },
-    "percorso_belvedere": {
-      "title": "Su camminu 'e su Marchesu",
-      "info": "Benvenuti al nostro suggestivo percorso panoramico, un sentiero che vi condurrà attraverso affascinanti vedute del nostro incantevole parco. Questo percorso offre la possibilità di immergervi nella bellezza naturale circostante e di godere di panorami mozzafiato. Lungo il percorso troverete panchine dove potrete fare una breve pausa, sedervi e ammirare la bellezza dei paesaggi circostanti. Il sentiero è ben curato e sicuro, con indicazioni chiare che vi guideranno attraverso i punti di interesse più suggestivi. Sia che siate amanti della fotografia o che cerchiate una passeggiata tranquilla a contatto con la natura, il nostro Percorso Panoramico offre l'opportunità di esplorare e apprezzare la bellezza del parco."
-    },
-    "pino_laricio": {
-      "title": "Pino Laricio",
-      "info": "Il pino laricio ha un portamento più slanciato rispetto al pino nero, infatti raggiunge mediamente i 35 metri di altezza ma può arrivare benissimo a superare abbondantemente i 40–50 metri. Inoltre, rispetto al pino nero, fornisce legname di migliore qualità."
-    },
-    "percorso_tranquillo": {
-      "title": "Camminu 'e mesu",
-      "info": "Questo sentiero appartato è pensato per coloro che cercano una fuga dal trambusto quotidiano e desiderano immergersi nella tranquillità della natura. Lungo il percorso, sarete avvolti da una calma rilassante e potrete godere di una passeggiata pacifica circondati da alberi secolari e canti degli uccelli. Il percorso è caratterizzato da una vegetazione lussureggiante e da una varietà di fiori colorati che offrono un piacere per gli occhi e per l'anima. La sua posizione appartata lo rende un luogo ideale per la riflessione e la meditazione. Percorrendo il sentiero, vi invitiamo a respirare profondamente, lasciare alle spalle lo stress quotidiano e lasciarvi avvolgere da una sensazione di pace interiore. Il Percorso Tranquillo è un luogo dove potrete ristabilire il contatto con voi stessi e con la natura circostante, regalandovi una pausa rigenerante nel bel mezzo del parco."
-    },
-    "ingresso_san_martino": {
-      "title": "Ingresso San Martino",
-      "info": "Benvenuti al Parco Aymerich. Questo ingresso accogliente vi invita a entrare in un mondo di meraviglie naturali e storiche. Con facilità di accesso e un'ampia area di accoglienza, questo ingresso è pensato per rendere l'arrivo nel parco un'esperienza piacevole e senza complicazioni. Una volta varcata questa porta, vi immergerete in un ambiente incantevole e variegato. Sentieri ben segnalati vi condurranno attraverso scenari mozzafiato, incorniciati da una natura rigogliosa e da paesaggi spettacolari. È anche il punto di partenza di emozionanti tour guidati e di attività coinvolgenti, che vi permetteranno di scoprire e apprezzare appieno la ricchezza del parco. Questo ingresso offre inoltre servizi pratici per i visitatori, come aree di parcheggio ben organizzate e strutture per il pic-nic, dove potrete godere di un momento di relax all'ombra di alberi secolari. Avrete anche accesso a bagni ben mantenuti per garantire il vostro comfort durante la visita. Da qui potrete esplorare tutti gli angoli affascinanti del parco e lasciarvi incantare dalla sua bellezza senza tempo."
-    },
-    "fontana_1899": {
-      "title": "Funtan 'e Ladus",
-      "info": "Questa splendida fontana rappresenta un'opera d'arte unica che risale al 1899, un simbolo tangibile della storia e del patrimonio di Laconi. Situata in una posizione suggestiva all'interno del parco, la Fontana incanta i visitatori con la sua bellezza e il suo fascino senza tempo. La fontana, con la sua maestosità architettonica, presenta dettagli finemente scolpiti e un design elegante. I giochi d'acqua che si spruzzano delicatamente creano un'atmosfera rinfrescante e piacevole, mentre il suono melodioso dell'acqua che scorre dona una sensazione di serenità e tranquillità. La Fontana diventa un punto di riferimento suggestivo all'interno del parco, offrendo un luogo incantevole per riposarsi, ammirare l'opera d'arte e godere di momenti di contemplazione. Circondata da alberi secolari e da un'atmosfera serena, la fontana rappresenta un'oasi di pace dove i visitatori possono riflettere, scattare fotografie o semplicemente godersi la sua bellezza intramontabile. La Fontana è un simbolo di orgoglio per la comunità di Laconi e una testimonianza tangibile del passato storico del luogo. Durante la vostra visita al Parco Aymerich, vi invitiamo a fermarvi presso la Fontana 1899, ad immergervi nella sua atmosfera incantevole e ad apprezzare il suo valore storico e estetico."
-    },
-    "cedro_atlantico": {
-      "title": "Cedro Atlantico",
-      "info": "Il cedro dell'Atlante, è un albero appartenente alla famiglia delle Pinaceae. Il nome deriva dalla sua origine e diffusione nella catena dell'Atlante in Nord-Africa, ed è detto anche cedro argentato per la sfumatura delle foglie."
-    },
-    "ingresso_su_acili": {
-      "title": "Ingresso Su Acili",
-      "info": "Benvenuti al Parco Aymerich. Questo ingresso offre un'accoglienza calorosa e un punto di partenza per un'avventura immersa nella natura e nella storia. Situato in una posizione strategica del parco, questo ingresso è facilmente accessibile e offre comode strutture per il parcheggio. Appena attraverserete l'ingresso, sarete accolti da una scenografia mozzafiato: un'atmosfera di tranquillità, circondata da alberi maestosi e da una flora rigogliosa. Qui inizia il vostro viaggio attraverso le meraviglie del parco, con sentieri ben segnalati che vi guideranno attraverso paesaggi incantevoli e punti di interesse unici. Questo ingresso è un punto di partenza ideale per coloro che desiderano esplorare la natura incontaminata del parco. I sentieri ben curati vi porteranno attraverso boschi suggestivi, prati verdi e panorami spettacolari, offrendo un'esperienza di immersione totale nella bellezza del territorio circostante. Inoltre, da questo ingresso, si possono facilmente raggiungere diversi servizi, come aree picnic attrezzate dove poter gustare un pasto all'aperto e bagni ben tenuti per garantire il comfort durante la visita al parco. Sia che siate amanti della natura, appassionati di fotografia o semplicemente desideriate trascorrere del tempo all'aria aperta."
-    },
-    "piazzale": {
-      "title": "Piazzale",
-      "info": "Benvenuti nell'area principale del Parco Aymerich, situato nella splendida zona picnic di Laconi. Questo parco incantevole è immerso nella natura rigogliosa e offre un'oasi di tranquillità per gli amanti della natura e delle attività all'aperto. L'info point è il punto di partenza ideale per esplorare tutte le meraviglie che il parco ha da offrire. Qui troverete una vasta gamma di informazioni utili, mappe dettagliate e consigli sui sentieri escursionistici più suggestivi, così come informazioni sulle specie di piante e animali che popolano l'area. Gli amichevoli membri del personale saranno lieti di fornirvi assistenza e di rispondere alle vostre domande, per aiutarvi a pianificare al meglio la vostra visita al parco. Sia che siate interessati a lunghe passeggiate, a pic-nic in famiglia o a semplici momenti di relax in mezzo alla natura, l'info point del Parco Aymerich sarà il vostro punto di riferimento per godervi al meglio questa straordinaria oasi verde."
-    },
-    "casa": {
-      "title": "Casa Matteo",
-      "info": "La casa di Matteo, aggiunta per scopi dimostrativi."
-    },
-    "casa-mebi": {
-      "title": "Casa Mebi",
-      "info": "La casa di Mebi, aggiunta per scopi dimostrativi."
-    },
     "poi-1": {
-      "title": "Punto di interesse 1",
-      "info": "Descrizione del punto di interesse 1, aggiunta per scopi dimostrativi."
+      "title": "ZOVA COLONIA MONTANA",
+      "info": "Questo sito conserva la memoria della Colonia Montana e del suo ruolo nella vita del territorio. Oggi è un punto ideale per fermarsi, osservare il paesaggio e immaginare le storie che hanno attraversato questi spazi. Durante la visita, prenditi qualche minuto per ascoltare i suoni del luogo e coglierne l'atmosfera."
     },
     "poi-2": {
-      "title": "Punto di interesse 2",
-      "info": "Descrizione del punto di interesse 2, aggiunta per scopi dimostrativi."
+      "title": "PARCHETTO",
+      "info": "Il Parchetto è uno spazio di pausa semplice ma prezioso, pensato per vivere Esterzili con calma. È un punto comodo per una breve sosta, per le famiglie e per chi vuole orientarsi prima di proseguire. Da qui si percepisce bene il ritmo quotidiano del paese."
     },
     "poi-3": {
-      "title": "Punto di interesse 3",
-      "info": "Descrizione del punto di interesse 3, aggiunta per scopi dimostrativi."
+      "title": "Ancora da definire",
+      "info": "Questo punto di interesse è in fase di definizione. La posizione è già visibile in mappa per facilitare l'esplorazione, mentre i contenuti ufficiali saranno pubblicati appena disponibili. Torna presto per scoprire la scheda completa."
+    },
+    "poi-4": {
+      "title": "MURALES TRENO PIAZZA BARBAGIA",
+      "info": "Il murale del treno in Piazza Barbagia è una testimonianza visiva che unisce identità locale e creatività contemporanea. L'opera invita a osservare dettagli, colori e simboli legati alla memoria collettiva della comunità. Fermati qualche minuto per leggerne il racconto attraverso le immagini."
+    },
+    "poi-5": {
+      "title": "CASA MUSEO",
+      "info": "La Casa Museo è un luogo che racconta oggetti, abitudini e gesti della tradizione locale. Ogni ambiente aiuta a comprendere come si viveva nel territorio e quali valori hanno accompagnato le generazioni passate. La visita offre un'esperienza intima, culturale e autentica."
+    },
+    "poi-6": {
+      "title": "PIAZZA DEI CENTENARI",
+      "info": "Piazza dei Centenari è uno spazio simbolico dedicato alla memoria e alla longevità della comunità. È un luogo di incontro che restituisce il senso del tempo, delle relazioni e della continuità tra generazioni. Qui il centro abitato mostra il suo volto più condiviso."
+    },
+    "poi-7": {
+      "title": "CHIESA S. MICHELE",
+      "info": "La Chiesa di San Michele rappresenta un punto di riferimento spirituale e storico per Esterzili. La sua presenza nel tessuto urbano racconta la tradizione religiosa e il legame profondo tra comunità e territorio. Visitala con rispetto, osservando architettura e dettagli artistici."
+    },
+    "poi-8": {
+      "title": "AREA SPORTIVA",
+      "info": "L'Area Sportiva è il cuore delle attività all'aperto, frequentata da giovani, famiglie e associazioni locali. È uno spazio dedicato al movimento, alla socialità e al benessere quotidiano. La sua funzione rende evidente la dimensione viva e partecipata del paese."
+    },
+    "poi-9": {
+      "title": "BARDANA",
+      "info": "Bardana è un punto che invita a scoprire una parte meno immediata ma significativa del territorio di Esterzili. Il contesto paesaggistico e l'atmosfera del luogo offrono un'esperienza di visita lenta e attenta. Ideale per chi cerca una connessione autentica con l'ambiente circostante."
+    },
+    "poi-10": {
+      "title": "PIAZZA VITALBA",
+      "info": "Piazza Vitalba è uno spazio urbano di passaggio e incontro, dove la vita del paese si intreccia tra quotidianità e socialità. È un ottimo punto per orientarsi e proseguire verso altri luoghi di interesse. Osservandola, si colgono ritmo e carattere della comunità locale."
     }
   }
 }

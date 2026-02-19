@@ -2,7 +2,7 @@
   "onBoardingPage": {
     "one": {
       "title": "Let's explore the Park together",
-      "subtitle": "Welcome to the official app of the Aymerich Park in Laconi. Follow the next steps to activate the features and receive information on sites of interest in the area.",
+      "subtitle": "Welcome to the official Esterzili app. Follow the next steps to enable features and receive information about local points of interest.",
       "next": "Continue"
     },
     "two": {
@@ -64,7 +64,7 @@
   "where": {
     "headerTitle": "Where we are",
     "button": "Get indications",
-    "info": "Laconi can be reached by leaving the main Sardinian road, SS 131, at the Villasanta junction and taking SS 197 towards Barumini. At Nurallao, take SS 128 towards Laconi. The Park is accessible from Park Street."
+    "info": "Esterzili can be reached from SS 131 by heading toward Sarcidano and continuing to the town center. Use the button below to start navigation to central Esterzili."
   },
   "about": {
     "headerTitle": "About us"
@@ -96,61 +96,45 @@
     "body": "Tap to discover more!"
   },
   "poi": {
-    "cascata_maggiore": {
-      "title": "Main Waterfall",
-      "info": "The waterfall is called so because it is the largest among the other waterfalls in the park. Although not particularly tall (about 12 meters), the Main Waterfall is still very impressive and represents one of the many natural attractions of the Park. It is also interesting because it is a rare example of waterfall travertine formation. Its percolating waters are very rich in calcium bicarbonate. The waterfall promotes the release of carbon dioxide, further emphasized by the presence of mosses that, through the photosynthetic process, help reduce the carbonic acid content of the waters. This causes the precipitation of calcium carbonate, which deposits on the wall of the waterfall and on the mosses, fueling the travertinization process."
+    "poi-1": {
+      "title": "ZOVA COLONIA MONTANA",
+      "info": "This site preserves the memory of the historic Mountain Colony and its role in local life. Today it is an ideal place to pause, observe the landscape, and imagine the stories that shaped this area. Take a few moments to listen to the sounds and atmosphere around you."
     },
-    "grotte_maimone": {
-      "title": "Maimone Caves",
-      "info": "Still visible and very well-preserved are numerous natural caves, partly hidden by lush vegetation and used as shelters during the bombings of 1943. It was the Aymerich family who opened the park so that it could be used as a refuge for the evacuees from Cagliari."
+    "poi-2": {
+      "title": "PARCHETTO",
+      "info": "Parchetto is a simple yet valuable stop designed for a calm experience of Esterzili. It is convenient for a short break, for families, and for visitors planning their next step. From here, you can feel the everyday rhythm of the town."
     },
-    "cedro_libano": {
-      "title": "Lebanon Cedar",
-      "info": "BOTANICAL CHARACTERISTICS OF THE SPECIES\n\nA slow-growing tree with a candelabra-like posture, featuring a multi-stemmed trunk and branches that tend to form ninety-degree angles as they ascend. The ultimate result is a dense and rather wide canopy, whose top flattens out over time. The bark, initially dark gray, evolves over time: smooth at first, it later fissures longitudinally. Needles, up to 3 cm long and dark green, are borne both individually on young twigs and in clusters of 20-30 on short lateral branches. The reproductive structures, both male and female, are found on the same plant. The male structures, gathered in erect cylindrical cones of brick-red hue, release yellow pollen in October-November; the female cones are single, rounded, smaller than the male ones, initially bright green, later turning pinkish.\n\nECOLOGY AND DISTRIBUTION OF THE SPECIES\n\nNative to the Eastern Mediterranean, it grows wild in the mountains of Lebanon, Syria, and southern Turkey (Taurus Mountains). It favors the cold climate of the mountains: it is found on rocky and limestone slopes facing north, between 1300 and 3000 meters above sea level, where winters are snowy and summers dry. In its native habitats, it thrives in open pure forests, lacking understory, or in mixed forests with Cilician fir, Turkish juniper, and various pine species.\n\nCURIOSITIES\n\nIn its original environment, it is becoming rare, prompting the Lebanese government to establish three protected areas for its preservation. The wood, of excellent quality, has been appreciated since ancient times. Once widespread in the Middle East, it provided compact, aromatic, and durable timber. Since the late 1700s, it has been cultivated in parks and gardens throughout Europe. This tree, with its rings on the primary branch cut at about 1.30 meters from the ground, is estimated to be 130 years old."
+    "poi-3": {
+      "title": "Still to be defined",
+      "info": "This point of interest is currently under definition. The location is already visible on the map to support exploration, while official content will be published as soon as available. Please check back soon for the complete profile."
     },
-    "castello_aymerich": {
-      "title": "Aymerich’s Mediaval Castle",
-      "info": "Nestled amidst the Park’s enchanting natural scenery is the Aymerich’s Mediaval Castle, built as an outpost on the border with the “Giudicato” (local kingdom) of Cagliari, but also as a summer redidence for the ruling family of Arborea, one of whose branches, the Lacon, came indeed from Laconi. The history of the castle is closely intertwined with the fief it once belonged to. The fief, which inclueded the castle and the village of Laconi, was assigned to Giovanni de Sena in 1436; it was later transferred to Enrico Enriquez and in 1479 to the Castelvi family, one of whose members, Giacomo in 1603 became the first Marquis of Laconi. This noble family was later superseded by the Aymerich, who built the castle which for a long time remained the family residence. The castle ranks with the finest example of medieval civil architecture in Sardinia, although of the original building, erected in 1053, unfortunately only the tower still stands: the first restorations were carried out in the second half of the 15th century and are witnessed by a beautiful main hall in Catalan Gothic style, which has some stone benches, and windows with poly-lobed arches, a feature also found in some other hystorical buildings on the island (such as the mansion-fortress of Villasor and the tower at Ghilarza), providing a sweeping view over the lower-lying village."
+    "poi-4": {
+      "title": "TRAIN MURAL - PIAZZA BARBAGIA",
+      "info": "The train mural in Piazza Barbagia is a visual landmark that blends local identity with contemporary creativity. The artwork invites visitors to observe symbols, colors, and details connected to community memory. Spend a few minutes reading its story through images."
     },
-    "servizi_igienici": {
-      "title": "Restrooms",
-      "info": "Strategically located in the heart of the park, our restroom facilities are designed to offer comfort and cleanliness to all visitors. With a modern and well-maintained structure, you can enjoy a hygienic and comfortable environment during your visit to the park. Our restrooms are easily accessible from various areas of the park, thanks to clear signage and visible directions along the main pathways. We are committed to providing a clean and safe environment for our visitors, ensuring a pleasant experience for everyone. Feel free to take a short break at our restroom facilities to enjoy a moment of relaxation and refreshment during your adventure in the park."
+    "poi-5": {
+      "title": "HOUSE MUSEUM",
+      "info": "Casa Museo tells the story of local traditions through objects, domestic spaces, and everyday gestures. Each room helps visitors understand how people lived and which values shaped previous generations. The visit offers an intimate and authentic cultural experience."
     },
-    "giardino_aymerich": {
-      "title": "Aymerich Garden",
-      "info": "Also known as the Laconi Park, the Aymerich Garden can be considered a true natural museum. It is located behind the ancient Aymerich palace, the feudal lords of the town until the 19th century, and covers an area of 22 hectares. It is not an exaggeration to call it an enchanted garden, created by Marquis Ignazio Aymerich, an avid collector of exotic plants, which continue to grow undisturbed to this day. Among the paths in the garden, the presence of strawberry trees, Corsican pines, plane trees, and holm oaks stands out. However, attention is also captured by the ruins of the medieval castle of Laconi, built in 1053. Near the ruins, there is also the famous Lebanese cedar, an evergreen conifer with dimorphic buds and needle-like leaves."
+    "poi-6": {
+      "title": "PIAZZA DEI CENTENARI",
+      "info": "Piazza dei Centenari is a symbolic square dedicated to memory and longevity within the community. It is a meeting place that reflects continuity between generations and the value of shared public life. Here, the town reveals one of its most meaningful social spaces."
     },
-    "percorso_belvedere": {
-      "title": "Su camminu 'e su Marchesu",
-      "info": "Welcome to our picturesque panoramic trail, a pathway that will lead you through captivating views of our enchanting park. This trail offers the opportunity to immerse yourself in the surrounding natural beauty and enjoy breathtaking panoramas. Along the way, you will find benches where you can take a short break, sit down, and admire the beauty of the surrounding landscapes. The trail is well-maintained and safe, with clear signage that will guide you through the most scenic points of interest. Whether you are a photography enthusiast or seeking a peaceful walk in nature, our Panoramic Trail provides the opportunity to explore and appreciate the beauty of the park."
+    "poi-7": {
+      "title": "ST. MICHELE CHURCH",
+      "info": "St. Michele Church is a spiritual and historical reference point for Esterzili. Its presence in the urban fabric reflects religious tradition and the strong bond between community and territory. Visit respectfully and take time to observe architectural and artistic details."
     },
-    "pino_laricio": {
-      "title": "Corsican pine",
-      "info": "The Corsican pine has a more slender posture compared to the black pine. It typically reaches an average height of 35 meters but can easily surpass 40-50 meters. Additionally, it provides higher-quality timber compared to the black pine."
+    "poi-8": {
+      "title": "SPORTS AREA",
+      "info": "The sports area is a key open-air space used by young people, families, and local associations. It supports physical activity, social interaction, and daily wellbeing. Its role highlights the active and participatory character of the town."
     },
-    "percorso_tranquillo": {
-      "title": "Camminu 'e mesu",
-      "info": "This secluded trail is designed for those seeking an escape from the hustle and bustle of daily life, wishing to immerse themselves in the tranquility of nature. Along the pathway, you will be enveloped by a calming serenity and can enjoy a peaceful walk surrounded by ancient trees and the melodies of birdsong. The trail is characterized by lush vegetation and a variety of colorful flowers that provide pleasure for both the eyes and the soul. Its secluded location makes it an ideal place for reflection and meditation. As you journey along the trail, we invite you to take deep breaths, leave behind the daily stresses, and be embraced by a sense of inner peace. The Tranquil Trail is a place where you can reconnect with yourself and the surrounding nature, offering a rejuvenating respite in the midst of the park."
+    "poi-9": {
+      "title": "BARDANA",
+      "info": "Bardana invites visitors to explore a quieter yet meaningful part of Esterzili's territory. The landscape and atmosphere encourage a slow, attentive visit. It is ideal for those seeking a more authentic connection with the surrounding environment."
     },
-    "ingresso_san_martino": {
-      "title": "Entrance San Martino",
-      "info": "Welcome to Aymerich Park. This welcoming entrance invites you to enter a world of natural and historical wonders. With easy access and a spacious reception area, this entrance is designed to make your arrival in the park a pleasant and uncomplicated experience. Once you pass through this gate, you will immerse yourself in a charming and diverse environment. Well-marked paths will lead you through breathtaking landscapes, framed by lush nature and spectacular scenery. It is also the starting point for exciting guided tours and engaging activities that will allow you to fully discover and appreciate the richness of the park. This entrance also offers practical services for visitors, such as well-organized parking areas and picnic facilities where you can enjoy a moment of relaxation in the shade of ancient trees. You will also have access to well-maintained bathrooms to ensure your comfort during the visit. From here, you can explore all the charming corners of the park and be enchanted by its timeless beauty."
-    },
-    "fontana_1899": {
-      "title": "Funtan 'e Ladus",
-      "info": "This magnificent fountain is a unique work of art dating back to 1899, a tangible symbol of Laconi's history and heritage. Located in a picturesque spot within the park, the Fountain enchants visitors with its timeless beauty and charm. The fountain, with its architectural grandeur, features finely carved details and an elegant design. The gently spraying water jets create a refreshing and pleasant atmosphere, while the melodious sound of flowing water provides a sense of serenity and tranquility. The Fountain becomes a captivating landmark within the park, offering a delightful place to rest, admire the artwork, and enjoy moments of contemplation. Surrounded by ancient trees and a serene ambiance, the fountain serves as an oasis of peace where visitors can reflect, take photographs, or simply bask in its timeless beauty. The Fountain is a source of pride for the Laconi community and a tangible testament to the place's historical past. During your visit to Aymerich Park, we invite you to pause at the 1899 Fountain, immerse yourself in its enchanting atmosphere, and appreciate its historical and aesthetic value."
-    },
-    "cedro_atlantico": {
-      "title": "Atlas Cedar",
-      "info": "The Atlas cedar is a tree belonging to the Pinaceae family. Its name derives from its origin and distribution in the Atlas Mountains in North Africa, and it is also called silver cedar due to the shade of its leaves."
-    },
-    "ingresso_su_acili": {
-      "title": "Entrance Su Acili",
-      "info": "Welcome to Aymerich Park. This entrance provides a warm welcome and serves as a starting point for an adventure immersed in nature and history. Located strategically within the park, this entrance is easily accessible and offers convenient parking facilities. As soon as you cross the entrance, you'll be greeted by a breathtaking scenery: an atmosphere of tranquility surrounded by majestic trees and lush flora. Here begins your journey through the wonders of the park, with well-marked trails guiding you through enchanting landscapes and unique points of interest.\nThis entrance is an ideal starting point for those wishing to explore the pristine nature of the park. Well-maintained paths will lead you through picturesque woods, green meadows, and spectacular viewpoints, providing a total immersion experience in the beauty of the surrounding area. Additionally, from this entrance, various services are easily accessible, such as equipped picnic areas where you can enjoy an outdoor meal and well-maintained bathrooms to ensure comfort during your visit to the park. Whether you are nature enthusiasts, photography enthusiasts, or simply seeking to spend time outdoors, this entrance welcomes you to a memorable experience."
-    },
-    "piazzale": {
-      "title": "Main Area",
-      "info": "Welcome to the main area of Aymerich Park, located in the beautiful picnic area of Laconi. This enchanting park is nestled in lush nature and offers an oasis of tranquility for nature lovers and outdoor enthusiasts. The info point is the ideal starting point to explore all the wonders that the park has to offer. Here you will find a wide range of useful information, detailed maps, and advice on the most scenic hiking trails, as well as information about the plant and animal species that inhabit the area. The friendly staff members will be happy to provide assistance and answer your questions to help you plan your visit to the park. Whether you're interested in long walks, family picnics, or simply moments of relaxation in the midst of nature, the info point of Parco Aymerich will be your reference point for making the most of this extraordinary green oasis."
+    "poi-10": {
+      "title": "PIAZZA VITALBA",
+      "info": "Piazza Vitalba is both a passage and meeting space where daily life and social interaction come together. It is a useful orientation point before moving toward other places of interest. Observing the square helps capture the rhythm and character of the local community."
     }
   }
 }
